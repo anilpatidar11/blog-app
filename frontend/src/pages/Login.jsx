@@ -7,7 +7,9 @@ const Login = () => {
   const [formData, setFormdata] = useState({ username: "", password: "" });
 
   const navigate = useNavigate();
-
+  
+const url = "https://blog-app-ahxa.onrender.com"
+  
   const handleClear = () => {
     setFormdata({
       username: "",
@@ -23,9 +25,9 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+ 
     try {
-      const res = await axios.post("http://localhost:5000/api/login", formData);
+      const res = await axios.post(`${url}/api/login`, formData);
 
       handleClear();
 
