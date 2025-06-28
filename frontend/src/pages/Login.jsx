@@ -46,7 +46,7 @@ const url = "https://blog-app-ahxa.onrender.com"
     }
   };
 
-  console.log(formData);
+
 
   return (
     <div className="register-div">
