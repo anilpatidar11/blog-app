@@ -56,7 +56,7 @@ const name = e.target.name;
 
 }
   
-console.log(formData)
+
 
   return (
 
