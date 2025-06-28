@@ -7,7 +7,9 @@ const CreateBlog = () => {
     content: "",
     author: "",
   });
-
+  
+const url = "https://blog-app-ahxa.onrender.com"
+  
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -31,7 +33,7 @@ const handleClear = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/add",
+        `${url}/api/add`,
         formData,{
   headers: {
     Authorization: `Bearer ${localStorage.getItem("token")}`
