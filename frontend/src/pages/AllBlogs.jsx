@@ -30,7 +30,7 @@ const url = "https://blog-app-ahxa.onrender.com"
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/delete/${id}`);
+      await axios.delete(`${url}/api/delete/${id}`);
       alert("User Deleted Successfully");
        getAllBlog();
     } catch (err) {
