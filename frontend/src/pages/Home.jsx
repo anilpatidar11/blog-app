@@ -7,11 +7,12 @@ import '../Home.css';
 
 const Home = () => {
   const [username, setUsername] = useState("");
-
+const url = "https://blog-app-ahxa.onrender.com"
+ 
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/secure", {
+        const res = await axios.get( `${url}/api/secure`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
