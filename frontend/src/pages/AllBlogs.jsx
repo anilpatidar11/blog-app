@@ -5,10 +5,10 @@ import '../allblogs.css'
 
 const AllBlogs = () => {
   const [data, setData] = useState([]);
-
+const url = "https://blog-app-ahxa.onrender.com"
   const getAllBlog = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/get",
+      const res = await axios.get(`${url}/api/get`,
 
   {
   headers: {
