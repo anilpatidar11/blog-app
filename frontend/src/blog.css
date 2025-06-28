@@ -1,0 +1,107 @@
+
+.blogg {
+  background-color: aliceblue;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-div {
+  width: 500px;
+  max-width: 90%;
+  padding: 2rem;
+  background-color: rgb(158, 198, 234);
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.blog-form-div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.blog-box {
+  margin-bottom: 1.2rem;
+}
+
+.blog-box label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+
+.blog-box input,
+.blog-box textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+
+.blog-box input:focus,
+.blog-box textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+button[type="submit"] {
+  padding: 0.7rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .blog-div {
+    padding: 1.5rem;
+  }
+
+  .blog-box input,
+  .blog-box textarea {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-div {
+    padding: 1rem;
+  }
+
+  .blog-box label {
+    font-size: 0.95rem;
+  }
+
+  .blog-box input,
+  .blog-box textarea {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}

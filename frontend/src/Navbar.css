@@ -1,0 +1,88 @@
+
+.mynav {
+  height: auto;
+  border: 1px solid rgb(169, 155, 155);
+  background-color: #48a7f5;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+.maindiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+
+.link {
+  text-decoration: none;
+  font-size: large;
+  color: 	#ffffff;
+}
+
+
+.link h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .maindiv {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .link h1 {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .link h1 {
+    font-size: 1.2rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+
+  .maindiv {
+    gap: 0.5rem;
+  }
+
+  button {
+    padding: 0.5rem;
+  }
+}

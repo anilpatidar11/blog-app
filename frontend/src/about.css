@@ -1,0 +1,50 @@
+
+.main-about {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+
+.about {
+  width: 80%;
+  max-width: 900px;
+  background-color: rgb(95, 128, 157);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 1rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+}

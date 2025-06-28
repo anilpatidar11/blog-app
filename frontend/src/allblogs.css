@@ -1,0 +1,89 @@
+
+.main-all {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: aliceblue;
+}
+
+
+.allblog {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  width: 50%;
+  border-radius: 0.6rem;
+  background-color: rgb(162, 200, 233);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.allblog:hover {
+  transform: scale(1.01);
+}
+
+
+.allblog button {
+  padding: 0.4rem 0.8rem;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.allblog button:hover {
+  background-color: rgb(223, 14, 42);
+}
+
+
+.label {
+  color: rgb(80, 70, 70);
+  font-weight: bold;
+}
+
+.value {
+  color: blue;
+  margin-left: 0.5rem;
+}
+
+
+@media (max-width: 992px) {
+  .allblog {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .allblog {
+    width: 90%;
+  }
+
+  .allblog button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .allblog {
+    padding: 0.8rem;
+  }
+
+  .label,
+  .value {
+    font-size: 0.95rem;
+  }
+
+  .allblog button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
