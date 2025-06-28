@@ -12,7 +12,8 @@ const Register = () => {
     phone: "",
 password:""
 })
-
+const url = "https://blog-app-ahxa.onrender.com"
+  
   const navigate = useNavigate()
   
   const handleChange = (e) => {
@@ -39,7 +40,7 @@ const name = e.target.name;
     e.preventDefault();
 
     try {
-      const res = await axios.post('http://localhost:5000/api/register', formData)
+      const res = await axios.post(`${url}/api/register`, formData)
       
       if (res.data.status) {
   handleClear()
